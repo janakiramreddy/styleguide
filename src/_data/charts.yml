@@ -313,16 +313,35 @@ donut-goal-grogress:
   name: Goal Progress
   display: true
   type: donut
+  show-labels: false
+  hide-points: true
   hide-legend: false
   series:
     - name: Completed
       color: green
-      data: [63.5]
+      data: [63]
     - name: In Progress
-      color: green-light
-      data: [37.7]
+      color: yellow
+      data: [10]
     - name: Overdue
-      color: green-lighter
-      data: [37.4]
+      color: red
+      data: [27]
+
+donut-risk-meter:
+  name: Goal Risk Meter
+  display: true
+  type: donut
+  show-labels: false
+  hide-legend: false
+  series:
+    - name: Completed
+      color: green
+      data: [63]
+    - name: In Progress
+      color: yellow
+      data: [10]
+    - name: Overdue
+      color: red
+      data: [27]
 
 

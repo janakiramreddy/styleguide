@@ -24,7 +24,7 @@ menu: index
 		<div class="col-sm-2">
 			<div class="card">
 				<div class="card-body text-center">
-					<div  style="height: 11rem">
+					<div  style="height: 12rem">
 						<div class="h5">Goals per Employee</div>
 						<div class="display-4 font-weight-bold mb-4">2</div>
 					</div>
@@ -40,7 +40,7 @@ menu: index
 		<div class="col-sm-2">
 			<div class="card">
 				<div class="card-body text-center">
-					<div style="height: 11rem">
+					<div style="height: 12rem">
 						<div class="h5">Last updated Median</div>
 						<div class="display-4 font-weight-bold mb-4">4</div>
 						<div class="text-muted mb-4">Days ago</div>
@@ -52,13 +52,7 @@ menu: index
 
 	<div class="row row-cards">
 		<div class="col-sm-4">
-			{% include cards/chart.html height=12 title="Chart title" id="chart-donut-goal-grogress" data="donut-goal-grogress" %}
-			<div class="card">
-				<div class="card-body">
-					<div id="chart-goal-progress" style="height: 12rem"></div>
-					<div class="h5 text-center">Goal Progress</div>
-				</div>
-			</div>
+			{% include cards/chart.html height=12 title="Goal Progress" id="chart-donut-goal-grogress" data="donut-goal-grogress" %}
 		</div>
 		<div class="col-sm-4">
 			<div class="card">
