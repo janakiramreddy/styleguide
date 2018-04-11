@@ -1,0 +1,172 @@
+--- 
+layout: default 
+title: Goals 
+---
+
+<div class="container">
+    <div class="row row-cards">
+        <div class="col-sm-6 col-lg-3">
+            {% include cards/icon-box.html color="blue" icon="fe fe-target" value="10" description="Goals" subtitle="Total" %}
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            {% include cards/icon-box.html color="yellow" icon="fe fe-clock" value="2" description="Goals" subtitle="In Progres" %}
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            {% include cards/icon-box.html color="green" icon="fe fe-check" value="5" description="Goals" subtitle="Complete"
+            %}
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            {% include cards/icon-box.html color="red" icon="fe fe-x" value="2" description="Goals" subtitle="Overdue" %}
+        </div>
+    </div>
+    <div class="card p-5">
+        <div class="media">
+            <div class="media-object mr-4">
+                <div class="mx-auto chart-circle chart-circle-sm" data-value="0.42" data-thickness="3" data-color="blue">
+                    <canvas width="80" height="80" style="height: 40px; width: 40px;"></canvas>
+                    <canvas width="80" height="80" style="height: 40px; width: 40px;"></canvas>
+                    <div class="chart-circle-value">42%</div>
+                </div>
+                <a href="#" class="icon w-100 d-block text-center mt-1">
+                    <i class="fe fe-trash" data-toggle="tooltip" title="" data-original-title="Delete Goal"></i>
+                </a>
+            </div>
+            <div class="media-body">
+                <div class="media-heading">
+                    <div class="row mt-2 float-right" style="width:250px;margin-right:6px;padding-top:20px;">
+                        <div class="col">
+                            <h6 class="m-0">
+                                <i class="fe fe-calendar" data-toggle="tooltip" title="" data-original-title="fa fa-calendar"></i>
+                                Start date
+                            </h6>
+                            <p class="text-muted mb-0">April 22, 2018</p>
+                        </div>
+                        <div class="col">
+                            <h6 class="m-0">
+                                <i class="fe fe-calendar" data-toggle="tooltip" title="" data-original-title="fa fa-calendar"></i>
+                                End date
+                            </h6>
+                            <p class="text-muted mb-0">April 22, 2018</p>
+                        </div>
+                    </div>
+                    <h5  style="margin-right: 250px;">Goal Title</h5>
+                </div>
+                <div class="media-body">
+                </div>
+                <div style="margin-right: 300px;">
+                    Goal Desctiption: Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo
+                    risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in
+                </div>
+                <h5 class="pt-5">Milestones</h5>
+                <div class="table-responsive">
+                    <table class="table no-rows table-vcenter mb-0">
+                        <tbody>
+                            <tr>
+                                <td class="w-1">
+                                    <i class="fe fe-square" data-toggle="tooltip" title="" data-original-title="Click to mark Complete"></i>
+                                </td>
+                                <td class="w-75">Ronald Bradley</td>
+                                <td class="text-right text-muted d-none d-md-table-cell text-nowrap">May 6, 2018</td>
+                                <td class="text-right text-muted d-none d-md-table-cell text-nowrap">May 6, 2018</td>
+                                <td class="w-1">
+                                    <a href="#" class="icon">
+                                        <i class="fe fe-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="w-1">
+                                    <i class="fe fe-check-square" data-toggle="tooltip" title="" data-original-title="Click to m mark in complete"></i>
+                                </td>
+                                <td class="w-75">Ronald Bradley</td>
+                                <td class="text-right text-muted d-none d-md-table-cell text-nowrap">May 6, 2018</td>
+                                <td class="text-right text-muted d-none d-md-table-cell text-nowrap">May 6, 2018</td>
+                                <td class="w-1">
+                                    <a href="#" class="icon">
+                                        <i class="fe fe-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-link">
+                        <i class="fe fe-plus-square mr-2"></i>Create Milestone</button>
+                </div>
+                <div class="table-responsive d-none">
+                    <table class="table no-rows table-vcenter">
+                        <tr>
+                            <td class="w-50">
+                                <div class="form-group mb-0">
+                                    <div class="input-icon">
+                                        <input type="text" class="form-control" placeholder="Milestone">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-muted d-none d-md-table-cell text-nowrap">
+                                <div class="form-group mb-0">
+                                    <div class="input-icon">
+                                        <input type="text" class="form-control" placeholder="Start Date">
+                                        <span class="input-icon-addon">
+                                            <i class="fe fe-calendar"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-muted d-none d-md-table-cell text-nowrap">
+                                <div class="form-group mb-0">
+                                    <div class="input-icon">
+                                        <input type="text" class="form-control" placeholder="End Date">
+                                        <span class="input-icon-addon">
+                                            <i class="fe fe-calendar"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="w-1">
+                                <button type="submit" class="btn btn-default">Cancel</button>
+                            </td>
+                            <td class="w-1">
+                                <button type="submit" class="btn btn-primary">Create</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <h5 class="pt-3">Feedback</h5>
+                <ul class="media-list">
+                    <li class="media mt-4">
+                        <div class="media-object avatar mr-4" style="background-image: url(demo/faces/female/17.jpg)"></div>
+                        <div class="media-body">
+                            <strong>Debra Beck: </strong>
+                            Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                            Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                            et. Sed posuere consectetur est at lobortis.
+                        </div>
+                    </li>
+                    <li class="media mt-4">
+                        <div class="media-object avatar mr-4" style="background-image: url(demo/faces/male/32.jpg)"></div>
+                        <div class="media-body">
+                            <strong>Jack Ruiz: </strong>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                            nibh, ut fermentum massa justo sit amet risus.
+                        </div>
+                    </li>
+                    <li class="media mt-4">
+                        <div class="media-object avatar mr-4" style="background-image: url(demo/faces/male/32.jpg)"></div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Feedback">
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-secondary">
+                                    <i class="fe fe-message-square"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,11 @@
+index:
+  name: Dashboard
+  url: index.html
+
+goals:
+  name: Goals
+  url: goals.html
+
+mygoals:
+  name: My Goals
+  url: my-goals.html

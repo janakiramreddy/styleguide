@@ -1,0 +1,33 @@
+<!doctype html>
+{% assign min-ext = '' %}{% if jekyll.environment == 'production' %}{% assign min-ext = '.min' %}{% endif %}
+<html lang="en">
+<head>
+	{% include head.html %}
+
+	<link rel="stylesheet" href="https://use.typekit.net/brj4lug.css">
+	
+	<script src="{{ site.base }}/assets/js/require.min.js"></script>
+	<script>
+        requirejs.config({
+            baseUrl: '{{ site.base }}'
+		});
+	</script>
+
+	<!-- Dashboard Core -->
+	<link href="{{ site.base }}/assets/css/dashboard.css" rel="stylesheet" />
+	<script src="{{ site.base }}/assets/js/dashboard.js"></script>
+
+	{% for plugin in site.theme-plugins %}
+	<!-- {{ plugin[1].name }} Plugin -->
+	{% if plugin[1].files contains 'css' %}<link href="{{ site.base }}/assets/plugins/{{ plugin[0] }}/plugin.css" rel="stylesheet" />{% endif %}
+	{% if plugin[1].files contains 'js' %}<script src="{{ site.base }}/assets/plugins/{{ plugin[0] }}/plugin.js"></script>{% endif %}
+	{% endfor %}
+</head>
+<body class="{{ page.body-class }}">
+
+<div class="page">
+	{{ content }}
+</div>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+<div class="card">
+	<div class="card-body">
+		<div id="{{ include.id }}" style="height: {{ include.height | default: 15}}rem;"></div>
+		<div class="h5 text-center">{{ include.title }}</div>
+	</div>
+</div>
+{% include js-charts.html id=include.id data=include.data %}
